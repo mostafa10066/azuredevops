@@ -1,0 +1,9 @@
+version: '3'
+services:
+  azure-service-php:
+    image: php:7.2-apache
+    container_name: php8-azure
+    ports:
+      - "80:80"
+    volumes:
+      - $PWD:/var/www/html
